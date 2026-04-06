@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curso gratuito para madres que quieren disfrutar el día a día. Descubrí cómo reconectar con el disfrute y la presencia en tu maternidad." />
+  <meta property="og:title" content="La Vos en la Maternidad — Disfrutar la Maternidad" />
+  <meta property="og:description" content="Súmate al curso gratuito para madres que quieren disfrutar el día a día ✨" />
+  <meta property="og:type" content="website" />
+  <title>La Vos en la Maternidad — Disfrutar la Maternidad</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVBAR — Glassmorphism
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar__inner">
+      <div class="navbar__brand">
+        <span class="navbar__logo-circle" aria-hidden="true">✦</span>
+        <span class="navbar__title">Catalina Justo</span>
+      </div>
+      <a href="#formulario" class="btn btn--primary navbar__cta" id="nav-cta-btn">
+        Unirme ahora
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO — Beneficio Principal
+    ═══════════════════════════════════════════ -->
+    <section class="hero" id="inicio" aria-label="Sección principal">
+      <!-- Mandala flower background image -->
+      <div class="hero__bg-image" aria-hidden="true">
+        <img
+          src="public /Mejora_calidad_imagen_202604061631.jpeg"
+          alt=""
+          class="hero__mandala"
+          loading="eager"
+        />
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <!-- Floating orbs decoration -->
+      <div class="hero__orbs" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__brand-title animate-fade-up" style="--delay: 150ms">
+          LA VOS DE LA MATERNIDAD
+        </h1>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         INTRO — Copy del Hero
+    ═══════════════════════════════════════════ -->
+    <section class="hero-intro" id="intro" aria-label="Introducción">
+      <div class="section-inner section-inner--narrow">
+
+        <div class="hero-intro__badge animate-on-scroll">
+          <span class="badge__icon">✦</span>
+          <span>Curso gratuito para madres</span>
+          <span class="badge__icon">✦</span>
+        </div>
+
+        <p class="hero-intro__subtitle animate-on-scroll">
+          Porque merecés sentirte presente, plena
+          y conectada con quien sos, más allá del rol de madre.
+        </p>
+
+        <div class="hero-intro__actions animate-on-scroll">
+          <a href="#formulario" class="btn btn--primary btn--lg" id="intro-cta">
+            Quiero disfrutar mi maternidad ✨
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         OBSTÁCULOS — Agitación del problema
+    ═══════════════════════════════════════════ -->
+    <section class="obstacles" id="obstaculos" aria-label="Reconocemos lo que sentís">
+      <div class="section-inner">
+
+        <div class="obstacles__header">
+          <span class="label-caps animate-on-scroll">¿Te suena familiar?</span>
+          <h2 class="obstacles__title animate-on-scroll">
+            Eso que sentís tiene nombre.<br />
+            <em>Y tiene solución.</em>
+          </h2>
+          <p class="obstacles__intro animate-on-scroll">
+            Muchas madres llegan a un punto donde el amor por sus hijos<br class="break-desktop" />
+            coexiste con un agotamiento que nadie parece comprender.
+          </p>
+        </div>
+
+        <div class="obstacles__grid">
+
+          <article class="obstacle-card animate-on-scroll" id="obstacle-1">
+            <div class="obstacle-card__icon-wrap" aria-hidden="true">
+              <span class="obstacle-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20"/><path d="m17 7-5-5-5 5"/><path d="m17 17-5 5-5-5"/>
+                </svg>
+              </span>
+            </div>
+            <div class="obstacle-card__body">
+              <h3 class="obstacle-card__title">Te sentís agotada</h3>
+              <p class="obstacle-card__text">
+                El cansancio no es solo físico. Es ese peso invisible de estar siempre "en modo mamá", sin espacio para vos.
+              </p>
+            </div>
+          </article>
+
+          <article class="obstacle-card animate-on-scroll" id="obstacle-2" style="--card-delay: 150ms">
+            <div class="obstacle-card__icon-wrap" aria-hidden="true">
+              <span class="obstacle-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </span>
+            </div>
+            <div class="obstacle-card__body">
+              <h3 class="obstacle-card__title">Sentís que nadie te entiende</h3>
+              <p class="obstacle-card__text">
+                Tu pareja, tu familia, tus amigas… todos tienen una opinión. Pero nadie parece captar exactamente cómo te sentís por dentro.
+              </p>
+            </div>
+          </article>
+
+          <article class="obstacle-card animate-on-scroll" id="obstacle-3" style="--card-delay: 300ms">
+            <div class="obstacle-card__icon-wrap" aria-hidden="true">
+              <span class="obstacle-card__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/>
+                </svg>
+              </span>
+            </div>
+            <div class="obstacle-card__body">
+              <h3 class="obstacle-card__title">No sabés cómo salir de la inercia</h3>
+              <p class="obstacle-card__text">
+                El día a día se repite en piloto automático. Te preguntás si esto es todo, y no encontrás la puerta de salida.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Puente emocional -->
+        <div class="obstacles__bridge animate-on-scroll">
+          <p class="bridge__text">
+            Si te identificaste con algo de esto, estás en el lugar correcto.<br />
+            <strong>No estás sola. Y esto tiene solución.</strong>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SOBRE EL CURSO — Transformación
+    ═══════════════════════════════════════════ -->
+    <section class="about-course" id="el-curso" aria-label="Sobre el curso">
+      <div class="section-inner section-inner--narrow">
+
+        <div class="about-course__layout">
+          <div class="about-course__copy">
+            <span class="label-caps animate-on-scroll">El curso gratuito</span>
+            <h2 class="about-course__title animate-on-scroll">
+              Tu voz interior<br />también importa
+            </h2>
+            <p class="about-course__text animate-on-scroll">
+              "La Vos en la Maternidad" es un espacio creado para madres reales — con hijos reales, días caóticos y corazones llenos de amor que necesitan también ser nutridos.
+            </p>
+            <p class="about-course__text animate-on-scroll">
+              A través de este curso vas a descubrir herramientas concretas para reconectar con el disfrute, recuperar tu energía y volver a sentirte vos misma, dentro de la maternidad y no a pesar de ella.
+            </p>
+
+            <ul class="feature-list animate-on-scroll" aria-label="Lo que vas a lograr">
+              <li class="feature-list__item">
+                <span class="feature-list__dot" aria-hidden="true">✦</span>
+                Reconectar con lo que te da energía
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__dot" aria-hidden="true">✦</span>
+                Herramientas para el día a día, no para el fin de semana ideal
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__dot" aria-hidden="true">✦</span>
+                Una comunidad que sí te entiende
+              </li>
+              <li class="feature-list__item">
+                <span class="feature-list__dot" aria-hidden="true">✦</span>
+                Ejercicios de voz y presencia para madres
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-course__visual animate-on-scroll">
+            <div class="course-card">
+              <div class="course-card__accent" aria-hidden="true"></div>
+              <p class="course-card__label">Empezá cuando quieras</p>
+              <p class="course-card__value">100% Gratuito</p>
+              <p class="course-card__sub">Sin excusas. Sin barreras.</p>
+              <div class="course-card__divider" aria-hidden="true"></div>
+              <ul class="course-card__details" aria-label="Detalles del curso">
+                <li>
+                  <span aria-hidden="true" class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                  </span>
+                  <span>Acceso inmediato</span>
+                </li>
+                <li>
+                  <span aria-hidden="true" class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                  </span>
+                  <span>Audios y ejercicios</span>
+                </li>
+                <li>
+                  <span aria-hidden="true" class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  </span>
+                  <span>A tu propio ritmo</span>
+                </li>
+                <li>
+                  <span aria-hidden="true" class="detail-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                  </span>
+                  <span>Comunidad de madres</span>
+                </li>
+              </ul>
+              <a href="#formulario" class="btn btn--primary btn--full" id="course-card-cta">
+                Quiero mi lugar ✨
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FORMULARIO — CTA Principal
+    ═══════════════════════════════════════════ -->
+    <section class="form-section" id="formulario" aria-label="Formulario de inscripción">
+
+      <!-- Decorative background -->
+      <div class="form-section__bg" aria-hidden="true">
+        <div class="form-bg-orb form-bg-orb--1"></div>
+        <div class="form-bg-orb form-bg-orb--2"></div>
+      </div>
+
+      <div class="section-inner">
+        <div class="form-section__layout">
+
+          <!-- Copy izquierda -->
+          <div class="form-section__copy animate-on-scroll">
+            <span class="label-caps label-caps--light">Tu momento es ahora</span>
+            <h2 class="form-section__title">
+              Súmate al curso gratuito para Madres<br />
+              que Quieren Disfrutar el día a día 
+              <span class="title-icon-inline" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+              </span>
+            </h2>
+            <p class="form-section__subtitle">
+              Dejá tus datos y te enviamos acceso inmediato.<br />
+              Sin spam. Solo amor y herramientas reales.
+            </p>
+          </div>
+
+          <!-- Formulario derecha -->
+          <div class="form-section__form-wrapper">
+            <iframe
+              src="https://go.tierradorada.ar/widget/form/eI2EB6RxO8iSV1ZdQnjU"
+              style="width:100%;height:100%;border:none;border-radius:12px;min-height:500px;"
+              id="inline-eI2EB6RxO8iSV1ZdQnjU" 
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Inscripción"
+              data-height="550"
+              data-layout-iframe-id="inline-eI2EB6RxO8iSV1ZdQnjU"
+              data-form-id="eI2EB6RxO8iSV1ZdQnjU"
+              title="Formulario de inscripción"
+            >
+            </iframe>
+            <script src="https://go.tierradorada.ar/js/form_embed.js"></script>
+          </div> <!-- End form wrapper -->
+
+        </div> <!-- End layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="section-inner">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo" aria-hidden="true">✦</span>
+          <span class="footer__name">La Vos en la Maternidad</span>
+        </div>
+        <p class="footer__tagline">
+          Un espacio para madres que eligen disfrutar.
+        </p>
+        <p class="footer__legal">
+          © 2026 La Vos en la Maternidad · Catalina Justo
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
