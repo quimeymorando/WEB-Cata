@@ -83,11 +83,57 @@ const ScrollAnimationsModule = (() => {
 })();
 
 
-// Lógica de formulario delegada completamente a iframe externo de GoHighLevel
+/* ═══════════════════════════════════════════════════════
+   4. FAQ ACCORDION — Una pregunta abierta a la vez
+═══════════════════════════════════════════════════════ */
+const FaqModule = (() => {
+  const items = $$('.faq-item');
+
+  const closeAll = (except = null) => {
+    items.forEach(item => {
+      if (item === except) return;
+      item.classList.remove('is-open');
+      const btn = $('.faq-item__btn', item);
+      const panel = $('.faq-item__panel', item);
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+      if (panel) panel.style.maxHeight = '0px';
+    });
+  };
+
+  const togglePanel = (item) => {
+    const btn = $('.faq-item__btn', item);
+    const panel = $('.faq-item__panel', item);
+    if (!btn || !panel) return;
+
+    const isOpen = item.classList.contains('is-open');
+    if (isOpen) {
+      item.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+      panel.style.maxHeight = '0px';
+    } else {
+      closeAll(item);
+      item.classList.add('is-open');
+      btn.setAttribute('aria-expanded', 'true');
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  };
+
+  return {
+    init() {
+      items.forEach(item => {
+        const btn = $('.faq-item__btn', item);
+        const panel = $('.faq-item__panel', item);
+        if (!btn || !panel) return;
+        panel.style.maxHeight = '0px';
+        btn.addEventListener('click', () => togglePanel(item));
+      });
+    }
+  };
+})();
 
 
 /* ═══════════════════════════════════════════════════════
-   6. SMOOTH SCROLL — Anchor links
+   5. SMOOTH SCROLL — Anchor links
 ═══════════════════════════════════════════════════════ */
 const SmoothScrollModule = (() => {
   const NAVBAR_OFFSET = 80; // px — compensate for fixed navbar
@@ -123,7 +169,8 @@ const SmoothScrollModule = (() => {
 document.addEventListener('DOMContentLoaded', () => {
   NavbarModule.init();
   ScrollAnimationsModule.init();
+  FaqModule.init();
   SmoothScrollModule.init();
 
-  console.log('🌸 La Vos en la Maternidad — iniciada correctamente');
+  console.log('🌸 La Vos de la Maternidad — programa iniciado correctamente');
 });
